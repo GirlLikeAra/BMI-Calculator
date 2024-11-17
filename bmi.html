@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="form-body">
+        <form id="form">
+            <div class="header">
+                <h1> BMI Calculator</h1>
+            </div>
+            <div class="input-label">
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    <input name="gender" id="gender" placeholder="Select an option">
+                    <div class="options">
+                        <input type="radio" name="gender" id="male" value="Male">
+                         <label for="male">Male</label>
+                         <input type="radio" name="gender" id="female" value="Female">
+                         <label for="male">Female</label>
+                    </div>
+                </div>
+                <div class="age">
+                    <label for="age">Age</label>
+                    <input type="text"  id="age" name="age" placeholder="Enter your Age">
+                    
+                </div>
+                <div class="height">
+                    <label for="height">Height</label>
+                    <input type="text" class="text" id="heightFt" name="height" placeholder="Height in Feet">
+                    <input type="text" class="text" id="heightIn" name="height" placeholder="Height in Inches">
+                </div>
+                <div class="weight">
+                    <label for="weight">Mass</label>
+                    <input type="text" class="text" id="weight" name="weight" placeholder="Enter your Weight">
+                </div>
+            </div>
+            <div class="down-part">
+                <div class="button-container">
+                    <button class="button" id="button"> Calculate BMI</button>
+                </div>
+                <div class="result-container">
+                    <p class="result" id="result"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>
